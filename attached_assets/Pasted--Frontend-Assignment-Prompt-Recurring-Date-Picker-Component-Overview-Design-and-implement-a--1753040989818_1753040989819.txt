@@ -1,0 +1,116 @@
+# Frontend Assignment Prompt: Recurring Date Picker Component
+
+## Overview
+
+Design and implement a **highly reusable** recurring date picker component in React, enabling users to select complex recurring dates (like the TickTick app), integrated into a full-featured, responsive Next.js application. 
+
+The final submission should deliver clean code, strong UX, complete documentation, robust testing, and thoughtful, user-centric features.
+
+## **1. Core Objective**
+
+Develop a component that enables intuitive selection and preview of recurring date rules, adaptable for real-life productivity and scheduling scenarios.
+
+## **2. Technical Stack & Architecture**
+
+- **Framework:** Next.js (*preferred*), or any React variant.
+- **Styling:** Tailwind CSS (*preferred*), or a modern CSS framework.
+- **State Management:** Zustand, Jotai, or React Context API (for scalable, maintainable global state).
+- **Dev Environment:** Work in a cloud IDE (CodeSandbox, StackBlitz, Gitpod, or GitHub Codespaces).
+- **Authentication & Data Storage:** Firebase (database, authentication, user data).
+
+## **3. Required Functionalities**
+
+### **A. Recurrence Rules**
+
+- **Basic Options:**
+  - Daily
+  - Weekly
+  - Monthly
+  - Yearly
+
+- **Customization:**
+  - User-defined intervals (`every X days/weeks/months/years`)
+  - Multiple days of the week selection
+  - Advanced patterns (e.g., "second Tuesday of every month")
+
+### **B. Date Range Selection**
+
+- **Start Date:** Date picker UI
+- **End Date:** Optional, with ability to leave open-ended
+
+### **C. Calendar Preview**
+
+- Live/mini calendar showing which dates will be included, for instant visual feedback
+
+### **D. User Profile & Authentication**
+
+- **Profile Modal:**
+  - Change display name
+  - Upload/change avatar
+  - Pick app-wide color theme
+
+- **Account Management:**
+  - Change password
+  - Manage email, username
+  - Secure login/signup for separate user data
+
+### **E. Additional Features (Enhanced Usability)**
+
+- **Notification System:** Remind users before upcoming recurring dates
+- **Event Sharing:** Share recurring setups with others (link or email, permissions controlled)
+- **Import/Export:** Download recurring event rules as JSON or sync to other calendar apps
+- **Accessibility:** Keyboard navigation, proper ARIA roles, high-contrast themes
+- **Mobile Responsiveness:** Flawless experience across all modern mobile screens and tablets
+
+## **4. Code & UX Requirements**
+
+- **Componentization:** 
+  - Break down into clear, reusable units: RecurrenceOption, CustomIntervalSelector, DayOfWeekSelector, PatternSelector, DatePicker, CalendarPreview, ProfileModal, etc.
+- **Documentation:**
+  - JSDoc or TSDoc in code
+  - User-facing documentation for each main area (README or integrated guide)
+- **Code Quality:**
+  - Clean, idiomatic, commented, with modular design
+  - Responsive layouts with Tailwind Utility Classes (or chosen framework)
+  - Reusable business logic for computing recurrence (plain JS module)
+
+## **5. Testing Strategy**
+
+- **Unit Tests:** For key recurrence calculation and state logic (e.g., rule parsing, calendar rendering)
+- **Integration Test:** Full component interaction, verifying UI changes with various recurrence configurations
+
+## **6. Deliverables & Documentation**
+
+- Complete, well-structured repository (Next.js project)
+- Each feature documented (inline and in project docs)
+- Clear demo page showing recurring picker in action for various scenarios
+- Test files with passing results for core logic and at least one integration scenario
+- Instructions for running locally and in chosen cloud IDE
+- All features functional on both desktop and mobile screens
+
+## **7. Brainstormed Additional Features**
+
+- **Dark/Light Mode with Theme Persistence**
+- **Drag & Drop Recurrence Editing**
+- **Rich Event Description/Notes field**
+- **Undo/Redo for all event edits**
+- **Browse and Apply Recurrence Templates**
+
+## **Example User Stories**
+
+- *“As a user, I want to set up a recurring meeting on the last Friday of every month, preview it on a calendar, and receive reminders on my phone.”*
+- *“I want to edit my profile and safely change my password, knowing my schedule remains private and synced.”*
+- *“I want to share my recurring workout schedule with my coach, who can import it into their account.”*
+
+## **Submission Checklist**
+
+- [ ] Recurring date picker handles all specified needs and edge cases
+- [ ] Clean, responsive UI, accessible on all devices
+- [ ] Modular code and clear documentation
+- [ ] Unit and integration testing included
+- [ ] User authentication and persistent user data via Firebase
+- [ ] Profile modal and account controls
+- [ ] Brainstormed and optional advanced features thoughtfully implemented
+- [ ] Seamless deployment and testing in a cloud IDE
+
+**Aim for a product-ready, extensible solution with delightful UX, strong documentation, and a suite of thoughtful, modern features inspiring confidence in both users and reviewers.**
