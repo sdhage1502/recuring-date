@@ -15,9 +15,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  experimental: {
-    allowedDevOrigins: ["*"],
-  },
 };
 
 module.exports = nextConfig;
